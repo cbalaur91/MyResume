@@ -64,7 +64,7 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="max-w-[600px] mx-auto text-muted-foreground"
           >
-            Passionate about creating elegant solutions to complex problems. Specializing in RPA, web development and cloud architecture.
+            Passionate about creating elegant solutions to complex problems. Specializing in RPA, web development and AI.
           </motion.p>
           
           <motion.div
