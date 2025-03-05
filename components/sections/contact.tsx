@@ -44,8 +44,9 @@ export function ContactSection() {
       // Simulate form submission
       await new Promise(resolve => setTimeout(resolve, 1000))
       toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "Contact form unavailable",
+        description: "Please send your request directly to aiwebcraftinfo@gmail.com",
+        variant: "default",
       })
       form.reset()
     } catch (error) {
@@ -140,6 +141,11 @@ export function ContactSection() {
           </Form>
         </motion.div>
       </div>
+      <footer className="text-center mt-8">
+      <p>
+        Powered by <a href="https://aiwebhub.io" className="text-blue-500 hover:underline">AiWebHub</a>
+      </p>
+    </footer>
     </section>
   )
 }

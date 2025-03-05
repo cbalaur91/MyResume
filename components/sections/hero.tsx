@@ -1,9 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { SparklesCore } from "@/components/ui/sparkles"
+import { GithubIcon, Linkedin } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -35,7 +34,7 @@ export function HeroSection() {
             className="relative mx-auto w-32 h-32 mb-8"
           >
             <img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=256&h=256&fit=crop&crop=faces"
+              src="images/Cosmin.png"
               alt="Profile"
               className="rounded-full shadow-2xl"
             />
@@ -74,15 +73,12 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="flex justify-center gap-4"
           >
-            <Button variant="outline" size="icon">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon">
+            <a href="https://github.com/cbalaur91" className="button-variant-outline button-size-icon" target="_blank" rel="noopener noreferrer">
+              <GithubIcon className="h-5 w-5" />
+            </a>
+            <a href="https://www.linkedin.com/in/cosminbalaur91" className="button-variant-outline button-size-icon" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon">
-              <Mail className="h-5 w-5" />
-            </Button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
